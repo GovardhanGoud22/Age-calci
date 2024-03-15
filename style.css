@@ -1,0 +1,188 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-image: url(back2.jpeg);
+    background-size: cover;
+}
+.box{
+    height: 350px;
+    width: 360px;
+    margin-left: 40vw;
+    margin-top: 10rem;
+    color:white;
+    text-align: center;
+   
+}
+.hide{
+    display:none;
+}
+
+h1{
+    height:50px;
+    width:350px;
+    font-size: 40px;
+}
+.calci{
+    height:60px;
+    width:350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 1rem;
+}
+.calci input{
+    height:35px;
+    width:200px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 1rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+
+}
+.calci button{
+    height:35px;
+    width:80px;
+    font-size: 15px;
+    margin-left: 10px;
+    border-radius: 1rem;
+    font-weight: 700;
+    background-color: rgb(230, 72, 72);
+    color:white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.calci input ::-webkit-calendar-picker-indicator{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    position: absolute;
+    background-position: calc(100%-10px);
+    background-size:30px;
+    cursor: pointer;
+
+}
+.result{
+    margin-top: 2.5rem;
+    width:350px;
+    font-size: 19px;
+    font-weight: 700;
+
+}
+.result span{
+    color: rgb(230, 72, 72);
+}
+@media (max-width:550px){
+    body{
+        background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+        background-size: cover;
+        object-fit: fill;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .box{
+        height:100vh;
+        width: 360px;
+        margin-left:0;
+        margin-top:0;
+        color:white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+       
+    }
+    .box img{
+        height:75px;
+        width:75px;
+        margin-bottom: 40px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 5px rgb(32, 30, 30);
+        
+    }
+    .hide{
+        display:block;
+        align-content: center;
+    }
+    h1{
+        height:50px;
+        width:350px;
+        font-size: 45px;
+        color: black;
+        font-weight: 700;
+        text-shadow: 2px 2px 5px rgb(250, 245, 245);
+    }
+    .calci{
+        height:65px;
+        width:360px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+        background-color: rgba(255,255,255,0.3);
+        border-radius: 1rem;
+    }
+    .calci input{
+        height:40px;
+        width:230px;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 1rem;
+        font-weight: 600;
+        border: none;
+        outline: none;
+    
+    }
+    .calci button{
+        height:40px;
+        width:85px;
+        font-size: 18px;
+        margin-left: 10px;
+        border-radius: 1rem;
+        font-weight: 700;
+        background-color: rgb(230, 72, 72);
+        color:white;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+    
+    .calci input ::-webkit-calendar-picker-indicator{
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        width:100%;
+        position: absolute;
+        background-position: calc(100%-10px);
+        background-size:30px;
+        cursor: pointer;
+    
+    }
+    .result{
+        margin-top: 4.5rem;
+        width:350px;
+        font-size: 25px;
+        font-weight: 700;
+        color: black;
+    
+    }
+    .result span{
+        color: yellow;
+    }
+
+}
